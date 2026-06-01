@@ -11,15 +11,11 @@ After completion, it becomes immutable documentation and has no runtime authorit
 
 # SETUP
 
-
-Clone/Fetch the raw files from: `https://github.com/massassi-web/FRAME.git`
-   CORE.md
-   GOVERNANCE.md
-
 Create directory structure and files:
 /
+   CORE.md
    TASKS.md
-   DECISIONS.md
+   MEMORY.md
    ROADMAP.md
    SPECS/
    ADR/
@@ -89,7 +85,32 @@ Existing architecture has priority over theoretical improvements.
 
 # PHASE OUTPUTS
 
+## Vision
+- project summary
+- MVP definition
+- scope boundaries
+- success criteria
 
+## Stack
+- selected technologies
+- tradeoff analysis
+- dependency rationale
+
+## Architecture
+- architecture summary
+- folder structure
+- data flow overview
+- service boundaries
+
+## Data
+- core entities
+- relationships
+- persistence strategy
+
+## Design
+- design direction
+- UI principles
+- interaction priorities
 
 ---
 
