@@ -18,7 +18,6 @@ Create directory structure and files:
    MEMORY.md
    ROADMAP.md
    SPECS/
-   ADR/
    src/
 
 ---
@@ -150,3 +149,12 @@ Examples:
 - ios/
 - android/
 
+---
+
+# COMPLETION
+
+Upon completion:
+- CORE.md becomes runtime authority
+- TASKS.md tracks execution
+- MEMORY.md stores project knowledge
+- ROADMAP.md tracks milestones
