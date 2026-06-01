@@ -110,6 +110,7 @@ Existing architecture has priority over theoretical improvements.
 - design direction
 - UI principles
 - interaction priorities
+- MVP visual scope
 
 ---
 
