@@ -25,8 +25,8 @@ Create directory structure and files:
 # WORKFLOW
 
 V - Project VISION
-A - Project ARCHITECTURE
 S - Project STACK
+A - Project ARCHITECTURE
 D - Project DATA
 D - Project DESIGN 
 
