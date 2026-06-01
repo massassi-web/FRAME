@@ -6,76 +6,9 @@ Repository standards and consistency rules.
 
 ---
 
-# DIRECTORY STRUCTURE
-
-```text
-/core
-/bootstrap
-/governance
-
-/docs
-  /foundation
-  /requirements
-  /architecture
-  /mood-design
-  /execution-infrastructure
-  /decisions
-
-/modules
-/src
-```
-
----
-
 # FILE NAMING RULES
 
-Use deterministic naming.
-
-Required:
-- 01_FOUNDATIONS.md
-- 02_USER_FLOWS.md
-- 03_REQUIREMENTS.md
-- 04_ARCHITECTURE.md
-- 05_DATABASE_SCHEMA.md
-- 06_DESIGN_SYSTEM.md
-- 07_INFRASTRUCTURE.md
-- 08_ROADMAP.md
-
-Never invent alternative names.
-
-Forbidden:
-- foundation-doc.md
-- architecture_v2.md
-- misc-notes.md
-
----
-
-# ADR RULES
-
-All major decisions require ADRs.
-
-Required for:
-- authentication
-- database strategy
-- rendering strategy
-- state management
-- infrastructure changes
-- external integrations
-
----
-
-# ADR FORMAT
-
-```text
-ADR-001-title.md
-```
-
-Required sections:
-- Status
-- Context
-- Decision
-- Consequences
-- Alternatives
+Use deterministic naming for applicable documents.
 
 ---
 
@@ -135,3 +68,16 @@ Avoid:
 - unnecessary migrations
 - architecture churn
 
+# TASK MANAGEMENT
+
+Tasks must contain:
+- objective
+- status
+- dependencies
+- acceptance criteria
+
+Statuses:
+- TODO
+- IN_PROGRESS
+- BLOCKED
+- DONE
