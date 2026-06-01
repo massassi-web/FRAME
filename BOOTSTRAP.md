@@ -47,6 +47,7 @@ After completing ANY phase or sub-phase:
 2. list generated files
 3. request explicit approval
 4. STOP immediately
+5. If user provides feedback instead of "YES", iterate on the current step and generate a new checkpoint.
 
 Forbidden:
 - continuing automatically
