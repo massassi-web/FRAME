@@ -181,7 +181,6 @@ Required:
 - type safety
 - input validation
 - error handling
-- avoid magic values
 
 Avoid:
 - tightly coupled systems
