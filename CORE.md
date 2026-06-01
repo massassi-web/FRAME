@@ -180,7 +180,9 @@ Avoid:
 Required:
 - type safety
 - input validation
-- error handling
+- predictable error handling (prefer explicit error returns/results over throwing generic exceptions)
+- Prefer native features
+- explicit edge-case logging
 
 Avoid:
 - tightly coupled systems
