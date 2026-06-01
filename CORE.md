@@ -62,7 +62,20 @@ Higher-priority rules override lower-priority rules.
 
 ---
 
-# ANT LAYER MODEL
+## Scope expansion rules
+Never introduce:
+- additional systems
+- abstractions
+- optimizations
+- features
+unless explicitly requested.
+
+---
+
+# DEFAULT ANT LAYER MODEL
+
+Use this model unless the project defines
+a more specific architecture.
 
 ## 1. Intent Layer
 Allowed:
@@ -107,7 +120,7 @@ Forbidden:
 
 Before implementation:
 1. Read relevant docs
-2. Load relevant ADRs
+2. Load relevant MEMORY.md
 3. Identify impacted systems
 4. Preserve architecture
 5. Implement minimally
@@ -132,14 +145,11 @@ Avoid rewrites unless necessary.
 # CONTEXT LOADING PROTOCOL
 Always load context strictly depending on the current task:
 
-## 1. For Project Initialization & Phase Workflow:
-- Load FRAME+CORE.md
-- Load FRAME+BOOTSTRAP.md
-
-## 2. For Feature Implementation & Code Maintenance:
-- Load FRAME+CORE.md
-- Load FRAME+GOVERNANCE.md
-- Load relevant ADRs and requirements
+## For Feature Implementation & Code Maintenance:
+- Load CORE.md
+- Load relevant requirements
+- Load relevant architecture documents
+- Load active tasks
 
 ---
 
