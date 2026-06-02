@@ -190,7 +190,7 @@ Avoid:
 - duplicated business logic
 - magic values
 - inconsistent naming
-
+  
 ---
 
 # DESIGN CONSISTENCY
@@ -216,7 +216,33 @@ Avoid:
 - unnecessary migrations
 - architecture churn
 
+---
+
+# CHECKPOINT RULE
+
+After completing ANY phase or sub-phase:
+
+1. summarize outputs
+2. list generated files
+3. request explicit approval
+4. STOP immediately
+5. If user provides feedback instead of "YES", iterate on the current step and generate a new checkpoint.
+
+Forbidden:
+- continuing automatically
+- generating future-phase documents
+- implementing features
+- asking next-phase questions
+
+Required approval format:
+"Do you approve this? Reply YES to continue."
+
+--- 
+
 # TASK MANAGEMENT
+
+Purpose:
+Track active and planned work.
 
 Tasks must contain:
 - objective
@@ -229,3 +255,33 @@ Statuses:
 - IN_PROGRESS
 - BLOCKED
 - DONE
+
+---
+
+# MEMORY
+
+Purpose:
+Store persistent project knowledge that may be
+useful across tasks and sessions.
+
+Contains:
+- project facts
+- domain knowledge
+- assumptions
+- discovered constraints
+- terminology
+- external system knowledge
+
+Must NOT contain:
+- active tasks
+- roadmap items
+- architecture definitions
+- implementation plans
+- temporary discussions
+
+Authority:
+CORE.md defines architecture.
+TASKS.md defines active work.
+ROADMAP.md defines future work.
+
+MEMORY.md stores knowledge only.
