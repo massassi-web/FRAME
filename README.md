@@ -21,10 +21,10 @@ The repository's structural governance is partitioned into four core operational
 
 Initial project bootstrapping must process linearly through five non-skippable developmental gates. No implementation or forward phase progression may occur until the active phase output criteria are finalized:
 
-[V] Vision
-[S] Stack
-[A] Architecture
-[D] Data 
+[V] Vision ➔
+[S] Stack ➔
+[A] Architecture ➔
+[D] Data ➔
 [D] Design
 
 [CHECKPOINT RULE] ➔ Halt & Require Explicit "YES"
