@@ -41,22 +41,8 @@ Rules:
 
 # CHECKPOINT RULE
 
-After completing ANY phase or sub-phase:
-
-1. summarize outputs
-2. list generated files
-3. request explicit approval
-4. STOP immediately
-5. If user provides feedback instead of "YES", iterate on the current step and generate a new checkpoint.
-
-Forbidden:
-- continuing automatically
-- generating future-phase documents
-- implementing features
-- asking next-phase questions
-
-Required approval format:
-"Do you approve this phase? Reply YES to continue."
+Project initialization follows the
+checkpoint process defined by CORE.md.
 
 ---
 

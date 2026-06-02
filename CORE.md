@@ -120,7 +120,7 @@ Forbidden:
 
 Before implementation:
 1. Read relevant docs
-2. Load relevant MEMORY.md
+2. Load only memory relevant to the affected system or task.
 3. Identify impacted systems
 4. Preserve architecture
 5. Implement minimally
