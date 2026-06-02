@@ -116,12 +116,12 @@ Unless a project defines a different architecture, the ANT model is the default 
 
 To initialize a FRAME project:
 
-Create the FRAME directory structure.
-Add the governance files to the project root.
-Load BOOTSTRAP.md into the AI assistant.
-Begin with the Vision phase.
-Progress sequentially through the initialization workflow.
-Obtain approval at every checkpoint.
+1. Create the FRAME directory structure.
+2. Add the governance files to the project root.
+3. Load BOOTSTRAP.md into the AI assistant.
+4. Begin with the Vision phase.
+5. Progress sequentially through the initialization workflow.
+6. Obtain approval at every checkpoint.
 
 Example initialization prompt:
 
