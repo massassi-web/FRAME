@@ -12,6 +12,17 @@ Use deterministic naming for applicable documents.
 
 ---
 
+# KNOWLEDGE SEPARATION
+
+Architecture belongs in CORE.md
+Project knowledge belongs in MEMORY.md
+Active work belongs in TASKS.md
+Future work belongs in ROADMAP.md
+
+Do not duplicate information across files.
+
+---
+
 # DOCUMENTATION RULES
 
 Documentation must be:
@@ -33,8 +44,9 @@ Avoid:
 Required:
 - type safety
 - input validation
-- error handling
-- avoid magic values
+- predictable error handling (prefer explicit error returns/results over throwing generic exceptions)
+- Prefer native features
+- explicit edge-case logging
 
 Avoid:
 - tightly coupled systems
@@ -67,6 +79,29 @@ Avoid:
 - large rewrites
 - unnecessary migrations
 - architecture churn
+
+---
+
+# CHECKPOINT RULE
+
+After completing ANY phase or sub-phase:
+
+1. summarize outputs
+2. list generated files
+3. request explicit approval
+4. STOP immediately
+5. If user provides feedback instead of "YES", iterate on the current step and generate a new checkpoint.
+
+Forbidden:
+- continuing automatically
+- generating future-phase documents
+- implementing features
+- asking next-phase questions
+
+Required approval format:
+"Do you approve this? Reply YES to continue."
+
+--- 
 
 # TASK MANAGEMENT
 
