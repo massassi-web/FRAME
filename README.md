@@ -1,82 +1,125 @@
-# FRAME: AI-Assisted Engineering Framework
+# FRAME
 
-FRAME is a minimalist, deterministic governance framework designed for "vibe coding" and autonomous AI development workflows. Its primary objective is to preserve absolute architectural integrity, systematically mitigate LLM hallucinations, and enforce a strict, phase-gated lifecycle across long-term project lifespans.
+**FRAME** is a lightweight governance framework for AI-assisted software development.
 
----
+It helps AI coding agents maintain architectural consistency, reduce scope creep, avoid unnecessary complexity, and preserve project knowledge across long-running projects.
 
-## 🏗️ System Architecture
+FRAME separates **project initialization** from **project execution** through two core documents:
 
-The repository's structural governance is partitioned into four core operational files, each maintaining clear boundaries of context and authority:
+* **BOOTSTRAP.md** — initializes the project
+* **CORE.md** — governs engineering decisions after initialization
 
-| File | Execution Lifecycle | Operational Authority & Core Purpose |
-| :--- | :--- | :--- |
-| `BOOTSTRAP.md` | Initialization Only | Governs the one-time project initialization phases (V-S-A-D-D). Retains zero runtime authority upon completion and becomes immutable historical documentation. |
-| `CORE.md` | Runtime Context | The central architectural law. Encapsulates immutable invariant rules, multi-layer ANT constraints, standards, and the checkpoint protocol. |
-| `TASKS.md` | Active Context | Tracks the precise status, objectives, explicit dependencies, and strict acceptance criteria for active and planned engineering sprints. |
-| `MEMORY.md` | Persistent Knowledge | A purely factual data sink. Aggregates discovered domain knowledge, physical constraints, terminology, and external integrations. Holds zero execution or planning authority. |
+The framework is intentionally small and tool-agnostic. It can be used with any AI coding assistant, regardless of model or platform.
 
 ---
 
-## 🚦 Initialization Lifecycle & Workflow (V-S-A-D-D)
+## Project Structure
 
-Initial project bootstrapping must process linearly through five non-skippable developmental gates. No implementation or forward phase progression may occur until the active phase output criteria are finalized:
+```text
+/
+├─ BOOTSTRAP.md
+├─ CORE.md
+├─ TASKS.md
+├─ MEMORY.md
+├─ ROADMAP.md
+├─ SPECS/
+└─ src/
+```
 
-[V] Vision ➔
-[S] Stack ➔
-[A] Architecture ➔
-[D] Data ➔
-[D] Design
-
-[CHECKPOINT RULE] ➔ Halt & Require Explicit "YES"
-
-* **V - Project Vision:** High-level project intent, clear MVP parameter boundaries, scope isolation, and explicit criteria for success.
-* **S - Project Stack:** Definitive technology selections, rigorous trade-off analyses, and structural dependency rationale.
-* **A - Project Architecture:** Formal structural baseline, complete directory hierarchy mapping, system data-flows, and interface boundaries.
-* **D - Project Data:** Mapping of core data entities, structural relational topologies, and concrete persistence mechanics.
-* **D - Project Design:** Core visual direction guidelines, underlying UI tokens, interaction mechanics, and constrained MVP screen scope.
-
----
-
-## 🚦 The Invariant Rules of AI Engagement
-
-Autonomous agents operating within a FRAME repository must comply with three mechanical integration laws at all times:
-
-### 1. The Checkpoint Protocol
-Immediately upon finishing any phase, sub-phase, or task block, the agent must completely halt all processing. It is explicitly forbidden to execute speculative optimizations, generate next-phase documentation, or touch code assets. The agent must return a highly structured output and ask: 
-`"Do you approve this? Reply YES to continue."`
-
-### 2. Qualified Questions Protocol
-Vague, open-ended, or ambiguous diagnostic inquiries are entirely prohibited. When prompting for human intervention, the agent must formulate a decisive direction using a strict conversational blueprint:
-1. **Recommendation:** Present a definitive, singular default technical action block.
-2. **Reasoning:** Provide structured technical justification and target architectural impact.
-3. **Alternatives:** Detail alternative architectural tradeoffs, performance differentials, or stack costs.
-4. **Confirmation Request:** Issue a binary gate block requiring explicit user authorization.
-
-### 3. Scope Expansion Rules
-Agents are strictly locked out from incorporating unrequested external systems, new design libraries, secondary abstractions, or forward-looking optimizations. Engineering execution must optimize solely for the minimal viable path required to satisfy the immediate acceptance criteria defined in `TASKS.md`.
+| File           | Purpose                                                           |
+| -------------- | ----------------------------------------------------------------- |
+| `BOOTSTRAP.md` | Defines the project initialization workflow.                      |
+| `CORE.md`      | Defines architectural principles, standards, and execution rules. |
+| `TASKS.md`     | Tracks active and planned work.                                   |
+| `MEMORY.md`    | Stores persistent project knowledge and decisions.                |
+| `ROADMAP.md`   | Tracks long-term goals and milestones.                            |
 
 ---
 
-## 📐 Architectural Paradigm: The ANT Layer Model
+## Why FRAME?
 
-By default, unless overwritten by an explicit system design layout inside the architectural specs, all functional logic adheres to a decoupled three-tier hierarchy called the **ANT Layer Model**:
+AI coding agents often struggle with:
 
-### 1. Intent Layer
-* **Allowed:** Presentational state rendering, primitive user input handling, and initial intent capture components.
-* **Forbidden:** Embedding domain business rules, direct persistence interaction, or multi-service orchestration.
+* architectural drift
+* duplicate implementations
+* unnecessary abstractions
+* uncontrolled scope expansion
+* inconsistent decisions across sessions
 
-### 2. Orchestration Layer
-* **Allowed:** Domain business workflows, programmatic state transitions, and coordination across execution boundaries.
-* **Forbidden:** Direct UI asset rendering, low-level database operations, or explicit infrastructure I/O side effects.
-
-### 3. Execution Layer
-* **Allowed:** Atomic database queries, low-level network API clients, filesystem read/writes, message queues, and peripheral hardware integrations.
-* **Forbidden:** Presentational visual layers, active session orchestration, or application workflow configuration context.
+FRAME introduces a small set of rules that help maintain consistency throughout the lifecycle of a project.
 
 ---
 
-## 🚀 Bootstrapping a New Repository
+## Initialization Workflow
 
-To initialize an empty repository under FRAME governance, mount the four root framework files into the project root and feed the following instruction to the incoming LLM context windows:
+Projects are initialized through five sequential phases:
 
-> "Inspect workspace infrastructure files if any exist. Read and process `BOOTSTRAP.md` to initialize the project strictly following the 'V - Project VISION' specifications. Generate all phase outputs, structure the system boundary definition, and HALT immediately at the checkpoint gate. Do not step forward without explicit verification."
+```text
+Vision → Stack → Architecture → Data → Design
+```
+
+Each phase must be approved before the next phase begins.
+
+This ensures that implementation never starts before requirements, architecture, and data models are properly defined.
+
+---
+
+## Core Principles
+
+Priority order:
+
+1. Architectural Integrity
+2. Simplicity
+3. Reusability
+4. Maintainability
+5. Performance
+6. Developer Convenience
+
+Higher-priority principles always override lower-priority principles.
+
+---
+
+## The ANT Layer Model
+
+FRAME uses a simple three-layer architecture by default.
+
+### Intent Layer
+
+Responsible for:
+
+* rendering
+* input handling
+* intent capture
+
+### Orchestration Layer
+
+Responsible for:
+
+* workflows
+* business coordination
+* state transitions
+
+### Execution Layer
+
+Responsible for:
+
+* databases
+* APIs
+* filesystem access
+* external effects
+
+Unless a project defines a different architecture, the ANT model is the default structure.
+
+---
+
+## Philosophy
+
+> Preserve architecture.
+>
+> Build the simplest correct solution.
+>
+> Extend before rewriting.
+>
+> Avoid unnecessary complexity.
+>
+> Keep decisions consistent over time.
