@@ -112,14 +112,46 @@ Unless a project defines a different architecture, the ANT model is the default 
 
 ---
 
-## Philosophy
+## Starting a New Project
 
-> Preserve architecture.
->
-> Build the simplest correct solution.
->
-> Extend before rewriting.
->
-> Avoid unnecessary complexity.
->
-> Keep decisions consistent over time.
+To initialize a FRAME project:
+
+Create the FRAME directory structure.
+Add the governance files to the project root.
+Load BOOTSTRAP.md into the AI assistant.
+Begin with the Vision phase.
+Progress sequentially through the initialization workflow.
+Obtain approval at every checkpoint.
+
+Example initialization prompt:
+
+```text
+Read BOOTSTRAP.md and initialize the project.
+
+Inspect the workspace for existing files and architecture.
+
+Begin with the Vision phase and follow the initialization workflow exactly.
+
+Stop at the first checkpoint and wait for approval before continuing.
+```
+
+---
+
+## Design Philosophy
+
+FRAME is built around a small set of engineering principles:
+
+* Preserve architectural integrity
+* Prefer simplicity over complexity
+* Reuse before creating new systems
+* Extend before rewriting
+* Minimize unnecessary abstractions
+* Maintain long-term consistency
+
+The framework intentionally remains lightweight and tool-agnostic, allowing it to be used with any AI coding assistant or development environment.
+
+---
+
+## License
+
+MIT License
