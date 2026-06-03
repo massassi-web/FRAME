@@ -127,12 +127,6 @@ Example initialization prompt:
 
 ```text
 Read BOOTSTRAP.md and initialize the project.
-
-Inspect the workspace for existing files and architecture.
-
-Begin with the Vision phase and follow the initialization workflow exactly.
-
-Stop at the first checkpoint and wait for approval before continuing.
 ```
 
 ---
