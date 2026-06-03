@@ -24,11 +24,11 @@ Create directory structure and files:
 
 # WORKFLOW
 
-V - Project VISION
-S - Project STACK
-A - Project ARCHITECTURE
-D - Project DATA
-D - Project DESIGN 
+V - VISION
+S - STACK
+A - ARCHITECTURE
+D - DATA
+D - DESIGN 
 
 
 Rules:
