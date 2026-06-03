@@ -220,21 +220,30 @@ Avoid:
 
 # CHECKPOINT RULE
 
-After completing ANY phase or sub-phase:
+After completing any phase, task, or significant work unit:
 
-1. summarize outputs
-2. list generated files
-3. request explicit approval
-4. STOP immediately
-5. If user provides feedback instead of "YES", iterate on the current step and generate a new checkpoint.
+1. Summarize completed work.
+2. List generated or modified files.
+3. List key decisions made.
+4. Identify outstanding assumptions or risks.
+5. Request explicit approval.
+6. STOP immediately.
+
+If the user provides feedback instead of "YES",
+iterate on the current work unit and generate
+a new checkpoint.
 
 Forbidden:
-- continuing automatically
+- continuing to the next task automatically
+- performing work outside the approved scope
 - generating future-phase documents
-- implementing features
-- asking next-phase questions
+- asking next-step questions
+
+The response must terminate immediately after
+the approval request.
 
 Required approval format:
+
 "Do you approve this? Reply YES to continue."
 
 --- 

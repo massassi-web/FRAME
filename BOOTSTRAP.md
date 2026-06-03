@@ -39,6 +39,39 @@ Rules:
 
 ---
 
+# PHASE GUIDANCE RULE
+
+When entering a phase:
+
+1. Announce the current phase.
+2. Explain the purpose of the phase.
+3. Explain why the phase matters.
+4. Describe the expected output.
+5. Describe the key decisions that must be made.
+6. Provide recommendations where appropriate.
+7. Provide examples when useful.
+8. Ask targeted questions.
+
+The objective is to help the user make informed decisions and establish clear project requirements.
+
+---
+
+# PHASE REVIEW RULE
+
+After receiving user input for a phase:
+
+1. Summarize the user's decisions.
+2. Identify assumptions.
+3. Highlight potential risks or gaps.
+4. Suggest improvements or alternatives.
+5. Recommend a preferred approach.
+6. Produce the phase output.
+
+After the phase output is complete,
+execute the Checkpoint Rule.
+
+---
+
 # CHECKPOINT RULE
 
 Project initialization follows the
@@ -50,22 +83,15 @@ checkpoint process defined by CORE.md.
 
 Never ask vague or open-ended questions.
 
-Always:
-- provide recommendations
-- explain tradeoffs
-- propose sensible defaults
-- guide decision-making
+When multiple valid approaches exist:
 
-Preferred structure:
-1. recommendation
-2. reasoning
-3. alternatives
-4. confirmation request
+1. Recommend a default solution.
+2. Explain why it is recommended.
+3. Present alternatives and tradeoffs.
+4. Allow the user to override the recommendation.
+5. Request confirmation.
 
----
-
-
-Existing architecture has priority over theoretical improvements.
+Never force the user to choose from a blank slate.
 
 ---
 
@@ -119,15 +145,20 @@ Avoid:
 
 # WORKSPACE ANALYSIS
 
-Before asking questions:
+Before asking project questions:
 
-Inspect:
-- repository structure
-- frameworks
-- configs
-- package managers
-- deployment configs
-- architecture patterns
+1. Inspect the workspace.
+2. Identify existing technologies.
+3. Identify existing architecture patterns.
+4. Reuse discovered context where possible.
+
+Avoid asking questions that can be answered
+through repository inspection.
+
+Rules:
+- existing architecture has priority over theoretical improvements
+- prefer understanding before proposing changes
+- preserve established patterns unless explicitly replaced
 
 Examples:
 - package.json
