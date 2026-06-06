@@ -294,3 +294,35 @@ TASKS.md defines active work.
 ROADMAP.md defines future work.
 
 MEMORY.md stores knowledge only.
+
+---
+
+# PROJECT DOCUMENT MAINTENANCE
+
+Project governance documents must remain current.
+
+Documentation updates are part of completing work,
+not a separate optional activity.
+
+TASKS.md
+- update when tasks are created, started, blocked, completed, or modified
+
+MEMORY.md
+- update when persistent project knowledge is discovered
+- update when assumptions become established facts
+- update when architectural decisions are finalized
+
+ROADMAP.md
+- update when milestones, releases, or long-term goals change
+
+Before generating a checkpoint:
+
+1. Update all affected governance documents.
+2. Verify document consistency.
+3. Generate the checkpoint.
+
+Avoid stale documentation.
+
+Governance documents must reflect the current
+project state before any checkpoint is generated.
+
