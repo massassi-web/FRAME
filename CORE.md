@@ -23,6 +23,20 @@ Higher-priority rules override lower-priority rules.
 
 ---
 
+# DECISION MAKING
+
+When blocked or when multiple valid solutions exist:
+
+1. Define the problem.
+2. Present three viable options.
+3. Compare tradeoffs.
+4. Recommend one option.
+5. Wait for user approval.
+
+(1-3-1 Technique)
+
+---
+
 # CORE RULES
 
 ## Architecture
@@ -32,6 +46,23 @@ Higher-priority rules override lower-priority rules.
 - Prefer extension over rewrites
 - Avoid duplicate implementations
 - Preserve composability
+
+---
+
+## DRY PRINCIPLE
+
+Before creating:
+
+- components
+- services
+- utilities
+- abstractions
+
+Search for existing implementations first.
+
+Prefer extension over duplication.
+
+Duplicate business logic is forbidden.
 
 ---
 
@@ -129,6 +160,21 @@ Before implementation:
 
 ---
 
+# PLANNING PROTOCOL
+
+For tasks involving multiple steps:
+
+1. Analyze scope.
+2. Create an execution plan.
+3. Create a task list.
+4. Identify dependencies and risks.
+5. Obtain approval when appropriate.
+6. Execute sequentially.
+
+Do not begin implementation before planning is complete.
+
+---
+
 # FAILURE PROTOCOL
 
 On failure:
@@ -191,6 +237,21 @@ Avoid:
 - magic values
 - inconsistent naming
   
+---
+
+# TESTING STRATEGY
+
+For backend and business logic:
+
+1. Review existing tests first.
+2. Prefer test-first development.
+3. Add or modify tests before implementation.
+4. Follow established testing patterns.
+
+Avoid excessive test generation.
+
+Testing effort should match implementation risk.
+
 ---
 
 # DESIGN CONSISTENCY
@@ -294,6 +355,24 @@ TASKS.md defines active work.
 ROADMAP.md defines future work.
 
 MEMORY.md stores knowledge only.
+
+---
+
+# CONTINUOUS LEARNING
+
+When discovering:
+
+- undocumented behavior
+- architectural decisions
+- project constraints
+- conflicting documentation
+- recurring implementation patterns
+
+Propose updates to project documentation.
+
+Never modify governance documents without approval.
+
+Knowledge gained during execution should be preserved.
 
 ---
 
