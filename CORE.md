@@ -62,7 +62,7 @@ Search for existing implementations first.
 
 Prefer extension over duplication.
 
-Duplicate business logic is forbidden.
+Duplicate business logic is forbidden except where decoupling explicitly overrides reuse.
 
 ---
 
