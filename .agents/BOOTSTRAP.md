@@ -13,11 +13,13 @@ After completion, it becomes immutable documentation and has no runtime authorit
 
 Create directory structure and files:
 /
-   CORE.md
-   TASKS.md
-   MEMORY.md
-   ROADMAP.md
-   SPECS/
+   .agents/
+      AGENTS.md
+      TASKS.md
+      MEMORY.md
+      ROADMAP.md
+      skills/
+   SPECS/            # Functional requirements, API contracts, design docs
    src/
 
 ---
@@ -75,7 +77,7 @@ execute the Checkpoint Rule.
 # CHECKPOINT RULE
 
 Project initialization follows the
-checkpoint process defined by CORE.md.
+checkpoint process defined by AGENTS.md.
 
 ---
 
@@ -173,7 +175,7 @@ Examples:
 # COMPLETION
 
 Upon completion:
-- CORE.md becomes runtime authority
-- TASKS.md tracks execution
-- MEMORY.md stores project knowledge
-- ROADMAP.md tracks milestones
+- .agents/AGENTS.md becomes runtime authority
+- .agents/TASKS.md tracks execution
+- .agents/MEMORY.md stores project knowledge
+- .agents/ROADMAP.md tracks milestones

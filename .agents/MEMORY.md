@@ -20,8 +20,8 @@ Must NOT contain:
 - temporary discussions
 
 Authority:
-CORE.md defines architecture.
-TASKS.md defines active work.
-ROADMAP.md defines future work.
+.agents/AGENTS.md defines architecture.
+.agents/TASKS.md defines active work.
+.agents/ROADMAP.md defines future work.
 
-MEMORY.md stores knowledge only.
+.agents/MEMORY.md stores knowledge only.

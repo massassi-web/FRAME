@@ -6,8 +6,8 @@ It helps AI coding agents maintain architectural consistency, reduce scope creep
 
 FRAME separates **project initialization** from **project execution** through two core documents:
 
-* **BOOTSTRAP.md** — initializes the project
-* **CORE.md** — governs engineering decisions after initialization
+* **.agents/BOOTSTRAP.md** — initializes the project
+* **.agents/AGENTS.md** — governs engineering decisions after initialization
 
 The framework is intentionally small and tool-agnostic. It can be used with any AI coding assistant, regardless of model or platform.
 
@@ -17,22 +17,26 @@ The framework is intentionally small and tool-agnostic. It can be used with any 
 
 ```text
 /
-├─ BOOTSTRAP.md
-├─ CORE.md
-├─ TASKS.md
-├─ MEMORY.md
-├─ ROADMAP.md
+├─ .agents/
+│  ├─ BOOTSTRAP.md
+│  ├─ AGENTS.md
+│  ├─ TASKS.md
+│  ├─ MEMORY.md
+│  ├─ ROADMAP.md
+│  └─ skills/
 ├─ SPECS/
 └─ src/
 ```
 
-| File           | Purpose                                                           |
-| -------------- | ----------------------------------------------------------------- |
-| `BOOTSTRAP.md` | Defines the project initialization workflow.                      |
-| `CORE.md`      | Defines architectural principles, standards, and execution rules. |
-| `TASKS.md`     | Tracks active and planned work.                                   |
-| `MEMORY.md`    | Stores persistent project knowledge and decisions.                |
-| `ROADMAP.md`   | Tracks long-term goals and milestones.                            |
+| File                  | Purpose                                                           |
+| --------------------- | ----------------------------------------------------------------- |
+| `.agents/BOOTSTRAP.md`| Defines the project initialization workflow.                      |
+| `.agents/AGENTS.md`   | Defines architectural principles, standards, and execution rules. |
+| `.agents/TASKS.md`    | Tracks active and planned work.                                   |
+| `.agents/MEMORY.md`   | Stores persistent project knowledge and decisions.                |
+| `.agents/ROADMAP.md`  | Tracks long-term goals and milestones.                            |
+| `.agents/skills/`     | Custom agent skills and tool/process extensions.                  |
+| `SPECS/`              | Contains functional requirements, API contracts, and design docs. |
 
 ---
 
@@ -117,8 +121,8 @@ Unless a project defines a different architecture, the ANT model is the default 
 To initialize a FRAME project:
 
 1. Create the FRAME directory structure.
-2. Add the governance files to the project root.
-3. Load BOOTSTRAP.md into the AI assistant.
+2. Add the governance files to the `.agents` folder.
+3. Load `.agents/BOOTSTRAP.md` into the AI assistant.
 4. Begin with the Vision phase.
 5. Progress sequentially through the initialization workflow.
 6. Obtain approval at every checkpoint.
@@ -126,7 +130,7 @@ To initialize a FRAME project:
 Example initialization prompt:
 
 ```text
-Read BOOTSTRAP.md and initialize the project.
+Read .agents/BOOTSTRAP.md and initialize the project.
 ```
 
 ---

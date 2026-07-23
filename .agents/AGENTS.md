@@ -1,4 +1,4 @@
-# FRAME+CORE
+# FRAME+AGENTS
 
 Immutable AI engineering kernel.
 
@@ -192,10 +192,11 @@ Avoid rewrites unless necessary.
 Always load context strictly depending on the current task:
 
 ## For Feature Implementation & Code Maintenance:
-- Load CORE.md
+- Load .agents/AGENTS.md
 - Load relevant requirements
 - Load relevant architecture documents
-- Load active tasks
+- Load active tasks (.agents/TASKS.md)
+- Load relevant custom skills (.agents/skills/<skill_name>/)
 
 ---
 
@@ -350,11 +351,11 @@ Must NOT contain:
 - temporary discussions
 
 Authority:
-CORE.md defines architecture.
-TASKS.md defines active work.
-ROADMAP.md defines future work.
+.agents/AGENTS.md defines architecture.
+.agents/TASKS.md defines active work.
+.agents/ROADMAP.md defines future work.
 
-MEMORY.md stores knowledge only.
+.agents/MEMORY.md stores knowledge only.
 
 ---
 
@@ -383,15 +384,15 @@ Project governance documents must remain current.
 Documentation updates are part of completing work,
 not a separate optional activity.
 
-TASKS.md
+.agents/TASKS.md
 - update when tasks are created, started, blocked, completed, or modified
 
-MEMORY.md
+.agents/MEMORY.md
 - update when persistent project knowledge is discovered
 - update when assumptions become established facts
 - update when architectural decisions are finalized
 
-ROADMAP.md
+.agents/ROADMAP.md
 - update when milestones, releases, or long-term goals change
 
 Before generating a checkpoint:
@@ -404,4 +405,16 @@ Avoid stale documentation.
 
 Governance documents must reflect the current
 project state before any checkpoint is generated.
+
+---
+
+# CUSTOM SKILLS
+
+Purpose:
+Extend AI agent capabilities with domain-specific or task-specific operational procedures.
+
+Structure:
+- Located under `.agents/skills/<skill_name>/`
+- Must contain a `SKILL.md` document defining the instructions with YAML frontmatter.
+- May contain supporting scripts (`scripts/`), examples (`examples/`), or resources (`resources/`).
 
